@@ -1,0 +1,518 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#eapps-instagram-feed-1 a {
+	color: #fff!important;
+	background-color: #fff!important;
+}
+
+
+html{
+	font-size: 62.5%;
+}
+body{
+
+	color: #000000;
+	font-family: "Gill Sans","Noto Sans CJK JP";
+	font-size: 1.4rem;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:gravscale;
+}
+
+a{
+	text-decoration: none;
+	color: #595757;
+}
+ul{
+	list-style: none;
+}
+li{
+	list-style: none;
+}
+img{
+	max-width: 100%!important;
+	height: auto!important;
+}
+.text-center{
+	text-align: center;
+}
+.img_sp{
+	display: none;
+}
+/*-------------------------------------
+
+
+header
+
+---------------------------------------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+background-color: #fff;
+	box-sizing: border-box;
+}
+.navigation{
+		position:sticky;
+		z-index: 500;
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+.nav-button {
+  display: none;
+
+}
+.nav a {
+    font-size: 1.6rem;
+	text-transform: uppercase;
+  }
+.nav a:hover{
+	color: #ec5939; 
+}
+ .nav li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+.nav li:last-of-type{
+	margin-right: 50px;
+}
+.logo{
+	margin-left: 50px;
+}
+.nav-wrap.open {
+  display: block;
+}
+.nav-wrap.close {
+  display: none;
+}
+
+/*-------------------------------------------------
+
+mainvsual
+
+-------------------------------------------------*/
+.main{
+	position: relative;
+}
+.site_title{
+	position: absolute;
+	top: 18%;
+    left: 40%;
+    font-size: 6rem;
+}
+.site_title_bm{
+	position: absolute;
+	top:28%;
+	left: 45%;
+	font-size: 6rem;
+}
+.indent{
+	text-indent: 2rem;
+}
+.main_pc{
+	width: 100%;
+}
+
+/*-------------------------------------------------
+
+profile
+
+-------------------------------------------------*/
+.about_main{
+	background-image: url(../images/profile_bg.png);
+    background-size: cover;
+    padding-bottom: 72px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.profile_img{
+	color: #000000;
+	text-align: right;
+    top: 80px;
+	position: relative;
+
+}
+.profile-text_inner{
+	width: 420px;
+	position:absolute;
+	z-index: 20;
+	right: 150px;
+	top:112px;
+
+}
+.profile_title{
+	letter-spacing: 0.1em;
+    font-weight: bold;
+	font-size: 4.8rem;
+ 	margin: 0 auto 40px;
+
+}
+.profile_name{
+	font-size: 2.4rem;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.profile_school{
+	margin-bottom: 20px;
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+.profile_sentence{
+	text-align: left;
+	line-height: 28px;
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+ .fadein {
+  opacity: 0;
+  transform : translate(0, 50px);
+  transition : all 1500ms;
+}
+
+.fadein.scrollin{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/*-------------------------------------------------
+
+concept
+
+-------------------------------------------------*/
+
+.concept_img{
+	margin-top: 120px;
+	margin-left: 10px;
+	position: relative;
+}
+
+
+.concept-tex_inner{
+	width: 420px;
+	position: absolute;
+	z-index: 10;
+	left: 219px;
+	top:117px;
+
+}
+.concept_sentence{
+	font-weight: 700;
+	font-size: 2.2rem;
+	line-height: 44px;
+	
+}
+.concept_title{
+	letter-spacing: 0.1em;
+	position: absolute;
+	z-index: 20;
+	left: 100px;
+	top: 95px;
+	font-weight: bold;
+	font-size: 4.8rem;
+	writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode:vertical-rl; 
+}
+
+
+/*-------------------------------------------------
+
+instagram
+
+-------------------------------------------------*/
+
+.instagram_title{
+	font-weight: bold;
+	font-size: 4.8rem;
+	margin-bottom: 80px;
+	margin-top: 32px;
+}
+.insta_inner{
+	margin: 112px 100px 0;
+}
+
+.sns-btn{
+	height: auto;
+	position: relative;
+    display: inline-block;
+    width: 363px;
+    padding: 23px 0 20px;
+    border: 3px solid #000;
+    font-size: 2.2rem;
+    letter-spacing: .04em;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.sns_inner{
+	margin-bottom: 64px;
+}
+
+/*-------------------------------------------------
+
+footer
+
+-------------------------------------------------*/
+.hr{
+	 height: 1px;
+  	border: none;
+ 	 border-top: 1px #000000 solid;
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+.logo_footer{
+	margin: 64px 0;
+	text-align:center;
+}
+.footer_nav{
+	justify-content: center;
+	display: flex;
+	margin-bottom: 104px;
+	
+}
+.footer_nav_title{
+	text-align: center;
+	display:inline-block;
+	font-size: 1.8rem;
+	font-weight: 500;
+	padding:  30px 30px 25px 30px;
+}
+.footer_nav_title a:hover{
+	color: #ec5939; 
+}
+.copyrights{
+	text-align: center;
+	margin-bottom: 32px;
+}
+/*スマホ*/
+	
+@media screen and (min-width: 481px) {
+  .nav-wrap {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 920px){
+	
+	.nav li{
+		    margin: 0 10px;
+	}
+	.nav a{
+		    font-size: 1.2rem;
+	}
+	.site_title{
+		    top:10%;
+	}
+}
+@media screen and (max-width: 720px) {
+
+
+#wrapper{
+width:100%;
+overflow-x: hidden !important;
+}
+.img_sp{
+		display: block;
+	}	
+.img_pc{
+		display: none;
+	}
+
+.nav-wrap.close {
+    display: none;
+}
+.nav-wrap.open {
+    display: block;
+}
+
+.content {
+  padding: 20px;
+}
+.nav-button {
+    display: block;
+    cursor: pointer;
+  }
+.nav-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: auto;
+	}
+  .nav {
+      height: 100%;
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+ .nav li {
+      display: block;
+      margin: 2em;
+	}
+	.nav li:last-of-type{
+		margin-bottom: 100px;
+	}
+ .nav a {
+        color: #fff;
+        font-size: 18px;
+      }
+  /*メニューボタンのエフェクト*/
+  .nav-button,
+  .nav-button span {
+    display: inline-block;
+    transition: all 0.4s;
+    box-sizing: border-box;
+  }
+  .nav-button {
+    z-index: 20;
+    position: relative;
+    width: 40px;
+    height: 36px;
+  }
+  .nav-button span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ec5939;
+    border-radius: 4px;
+  }
+  .nav-button span:nth-of-type(1) {
+    top: 0;
+  }
+  .nav-button span:nth-of-type(2) {
+    top: 16px;
+  }
+  .nav-button span:nth-of-type(3) {
+    bottom: 0;
+  }
+  .nav-button.active span:nth-of-type(1) {
+    -webkit-transform: translateY(16px) rotate(-45deg);
+    transform: translateY(16px) rotate(-45deg);
+  }
+  .nav-button.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .nav-button.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-16px) rotate(45deg);
+    transform: translateY(-16px) rotate(45deg);
+  }
+	.logo{
+		margin-left: 0;
+	}
+	/*--------------------
+	
+	main
+	------------------------*/
+	.main{
+		line-height: 0;
+	}
+	.main_sp{
+		width: 100%;
+	}
+	.site_title_bm{
+		top: 40%;
+    	left: 38%;
+    	font-size: 4rem;
+	}
+	.site_title{
+		top: 28%;
+    	left: 20%;
+    	font-size: 4rem;
+	}
+	.about_main{
+		background-image: url("../images/profile_bg_sp.jpg");
+	}
+	.profile_title{
+		    font-size: 2.8rem;
+    		margin: 0 auto 20px;
+	}
+	.profile_name{
+		    font-size: 1.8rem;
+    	margin-bottom: 10px;
+	}
+	.profile_school{
+		line-height: 16px;
+		margin-bottom: 8px;
+    	font-size: 0.8rem;
+		text-align: left;
+	}
+	.profile_sentence{
+		line-height: 16px;
+    	font-size: 0.8rem;
+	}
+	.profile-text_inner{
+  	width: 65%;
+    right: 17%;
+    top: 17%;
+	}
+	.profile_img{
+		top: 120px;
+		margin-bottom: 260px;
+	}
+	.concept_img{
+		margin-left: 0;
+		margin-right: 40px;
+	}
+	.concept_title{
+    left: 10%;
+    top: 25%;
+    font-size: 3rem;
+	}
+	.concept-tex_inner{
+		left: 25%;
+        top: 35%;
+    	width: 210px;
+	}
+	.concept_sentence{
+		font-size: 1.2rem;
+    	line-height: 24px;
+	}
+	/*-------------------------------------
+	
+	
+	insta
+	
+	-------------------------------------*/
+	.instagram_title {
+    font-size: 3.6rem;
+    margin-bottom: 40px;
+	}
+	.insta_inner{
+	    margin: 64px 40px 0;
+}
+	.next{
+		color: #595757;
+    	vertical-align: middle;
+    	margin-left: 5px;
+	}
+
+	.sns-btn{
+		padding: 10px 0;
+		width: 250px;
+		border: 2px solid #595757;
+		font-size: 1.4rem;
+	}
+	.insta_icon{
+		vertical-align: middle;
+	}
+	.footer_nav{
+		display: block;
+	}
+	.footer_nav_title{
+		padding: 20px;
+	}
+	 .fadein {
+  transform : translate(0, 25px);
+  transition : all 800ms;
+}
+
+}
+
+
